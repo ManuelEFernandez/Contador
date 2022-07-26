@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+    list-style: none;
+
+}
+
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to bottom, #243B55, #141E30); 
+}
+
+.caja-contador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 500px;
+    width: 340px;
+    background-color: rgba(245, 245, 245, 0.737);
+    border: 3px solid black;
+    z-index: 1;
+    position: relative;
+}
+
+h1, h2 {
+
+    z-index: 15;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+.caja-contador:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    background-image: url(/estacion.PNG);
+    background-size: cover;
+    height: 494px;
+    width: 334px;
+    opacity: 0.7;
+    border: 6px solid black;
+    
+    
+
+}
+
+button, .boton-contador {
+    background-color: rgba(100, 148, 237, 0.515);
+    height: 60px;
+    width: 200px;
+    z-index: 20;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.boton-guardar {
+
+    background-color: rgba(100, 237, 148, 0.515);
+    
+}
+
+.boton-resetear {
+
+    background-color: rgba(237, 100, 107, 0.515);
+
+}
+.boton-contador:active {
+
+    background-color: rgba(100, 148, 237, 0.515);
+  box-shadow: inset 0px 0px 12px rgba(27, 47, 83, 0.515);
+  outline: none;
+  
+}
+
+.caja-guardados {
+
+    height: 50px;
+    width: 200px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.64);
+    z-index: 20;
+    
+    
+}
