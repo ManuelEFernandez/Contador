@@ -83,11 +83,24 @@ button, .boton-contador {
 }
 .boton-contador:active {
 
-    background-color: rgba(100, 148, 237, 0.515);
+
   box-shadow: inset 0px 0px 12px rgba(27, 47, 83, 0.515);
-  outline: none;
+  
   
 }
+
+.boton-guardar:active {
+
+
+  box-shadow: inset 0px 0px 12px rgba(34, 80, 50, 0.515);
+  
+}
+
+.boton-resetear:active {
+
+    box-shadow: inset 0px 0px 12px rgba(92, 38, 41, 0.515);
+}
+
 
 .caja-guardados {
 
